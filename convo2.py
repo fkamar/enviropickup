@@ -51,7 +51,7 @@ def outgoing_sms(f):
     client = Client(account_sid, auth_token)
 
     replyText = client.messages.create(to= f,
-                                     from_='+12262712087',
+                                     from_='EnviroPickupNumber',
                                      body="Your garbage will be picked up today! Please place it on the curb :)")
     return str(replyText)
 
