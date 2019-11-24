@@ -46,8 +46,8 @@ def incoming_sms():
         counter=48
 
 def outgoing_sms(f):
-    account_sid = "AC2ef3b3f1129a5c58646cd19aee908ebf"
-    auth_token = "24c223d8c58749119ef0f2110387b74c"
+    account_sid = "*******"
+    auth_token = "********"
     client = Client(account_sid, auth_token)
 
     replyText = client.messages.create(to= f,
